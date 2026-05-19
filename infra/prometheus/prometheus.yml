@@ -1,0 +1,28 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: api-gateway
+    static_configs:
+      - targets: ['api-gateway:4000']
+  - job_name: user-service
+    static_configs:
+      - targets: ['user-service:4001']
+  - job_name: search-service
+    static_configs:
+      - targets: ['search-service:4002']
+  - job_name: admin-service
+    static_configs:
+      - targets: ['admin-service:4003']
+  - job_name: notification-service
+    static_configs:
+      - targets: ['notification-service:4004']
+  - job_name: booking-service
+    static_configs:
+      - targets: ['booking-service:4005']
+  - job_name: payment-service
+    static_configs:
+      - targets: ['payment-service:4006']
+  - job_name: inventory-service
+    static_configs:
+      - targets: ['inventory-service:4007']
