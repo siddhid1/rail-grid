@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BookingConfirmedEvent",
+  "type": "object",
+  "required": [
+    "bookingId",
+    "userId",
+    "scheduleId",
+    "trainNumber",
+    "trainName",
+    "departureDate",
+    "seats",
+    "passengers",
+    "totalAmount"
+  ],
+  "properties": {
+    "bookingId": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "scheduleId": {
+      "type": "string"
+    },
+    "trainNumber": {
+      "type": "string"
+    },
+    "trainName": {
+      "type": "string"
+    },
+    "departureDate": {
+      "type": "string"
+    },
+    "totalAmount": {
+      "type": "number"
+    },
+    "seats": {
+      "type": "array"
+    },
+    "passengers": {
+      "type": "array"
+    }
+  }
+}

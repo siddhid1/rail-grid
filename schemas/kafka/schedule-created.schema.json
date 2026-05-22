@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ScheduleCreatedEvent",
+  "type": "object",
+  "required": [
+    "scheduleId",
+    "trainId",
+    "trainNumber",
+    "trainName",
+    "departureDate",
+    "status",
+    "seats"
+  ],
+  "properties": {
+    "scheduleId": {
+      "type": "string"
+    },
+    "trainId": {
+      "type": "string"
+    },
+    "trainNumber": {
+      "type": "string"
+    },
+    "trainName": {
+      "type": "string"
+    },
+    "departureDate": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "CANCELLED"
+      ]
+    },
+    "seats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "seatId",
+          "seatNumber",
+          "seatType",
+          "price"
+        ],
+        "properties": {
+          "seatId": {
+            "type": "string"
+          },
+          "seatNumber": {
+            "type": "integer"
+          },
+          "seatType": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "route": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PaymentSuccessEvent",
+  "type": "object",
+  "required": [
+    "paymentOrderId",
+    "bookingId",
+    "gatewayPaymentId",
+    "amount",
+    "timestamp"
+  ],
+  "properties": {
+    "paymentOrderId": {
+      "type": "string"
+    },
+    "bookingId": {
+      "type": "string"
+    },
+    "gatewayPaymentId": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  }
+}
