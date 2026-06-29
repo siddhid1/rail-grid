@@ -1,0 +1,36 @@
+{
+  "name": "@irctc/notification-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "dev": "tsx watch src/main.ts",
+    "lint": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "node dist/main.js",
+    "test": "jest --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@irctc/shared": "workspace:*",
+    "@nestjs/common": "^10.4.20",
+    "@nestjs/config": "^3.3.0",
+    "@nestjs/core": "^10.4.20",
+    "@nestjs/platform-express": "^10.4.20",
+    "@nestjs/schedule": "^4.1.2",
+    "@nestjs/swagger": "^8.1.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "cookie-parser": "^1.4.7",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.9.2",
+    "kafkajs": "^2.2.4",
+    "prom-client": "^15.1.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "zod": "^3.25.76",
+    "@sendgrid/mail": "^8.1.4"
+  },
+  "devDependencies": {}
+}
