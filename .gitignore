@@ -8,5 +8,9 @@ coverage/
 .turbo/
 .pnpm-store/
 tmp/
-docs/
+docs/*
+!docs/MICROSERVICES.md
 docks/
+*.pdf
+interview*
+resume*
